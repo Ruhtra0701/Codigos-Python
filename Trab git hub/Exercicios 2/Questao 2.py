@@ -1,0 +1,5 @@
+nome = input("Digite seu nome completo: ").strip()
+partes = nome.split()
+ultimo = partes[-1].capitalize()
+iniciais = ''.join([p[0].upper() + '. ' for p in partes[:-1]])
+print(f"{ultimo}, {iniciais.strip()}")
